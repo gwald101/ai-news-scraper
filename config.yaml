@@ -1,0 +1,39 @@
+# AI News Scraper - Central Configuration
+
+general:
+  lookback_days: 7
+  output_dir: "output"
+
+llm:
+  provider: "gemini"
+  model: "gemini-1.5-flash"
+  batch_size: 10
+
+sources:
+  x:
+    enabled: true
+    actor_id: "quacker/twitter-scraper"
+    tweets_per_user: 20
+    batch_size: 10
+    timeout_secs: 300
+    
+  instagram:
+    enabled: false  # Not yet implemented
+    actor_id: "TBD"
+    posts_per_user: 10
+    
+  tiktok:
+    enabled: false  # Not yet implemented
+    actor_id: "TBD"
+    videos_per_user: 10
+    
+  linkedin:
+    enabled: false  # Not yet implemented
+    actor_id: "TBD"
+    posts_per_user: 10
+    
+  web:
+    enabled: false  # Not yet implemented
+    include_rss: true
+    include_urls: true
+

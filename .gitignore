@@ -1,0 +1,33 @@
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+
+# Output files (generated data)
+output/
+raw_tweets.json
+filtered_tweets.json
+digest.md
+tracked_users.json
+tracked_handles.txt
+
+# Legacy files (can be deleted)
+seed_following.json
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
